@@ -2,6 +2,7 @@
     color:black;
     margin: 0;
     padding: 0;
+    
 }
 .wrapper{
     height:100vh;
@@ -48,11 +49,13 @@
     box-shadow: 0 2px 4px black;
 
 }
-
+.title{
+    text-align: center;
+    font-size: 3rem;;
+}
 #clock li{
     list-style: none;
     position: absolute;
-
 }
 .numbers{
     position: absolute;
