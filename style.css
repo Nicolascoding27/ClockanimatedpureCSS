@@ -140,17 +140,69 @@
 .numbers:nth-child(12){
     transform:rotate(-360deg) ;
 }
-
-
+#second{
+    width: 100%;
+    height: 100%;
+    animation: sec 60s steps(60,end) infinite;
+}
+#second:after{
+    content: "";
+    width:4px;
+    height:103px;
+    border-radius:  2px;
+    background: #fd2e62;
+    position:absolute;
+    left: calc(50% - 2px);
+    top:50px;
+    box-shadow:  1px 2px 3px black;
+}
+#minute{
+    width:100%;
+    height: 100%;
+    animation: sec 3600s steps(60,end) infinite;
+}
+#minute:after{
+    content:"";
+    width:8px;
+    height:79px;
+    border-radius: 4px 4px 2px 2px ;
+    background: white;
+    position: absolute;
+    left: calc( 50% + 30px);
+    top:29%;
+    transform:rotate(-120deg);
+    box-shadow: -1px 0 50px black;
+}
+#hour{
+    width:100%;
+    height: 100%;
+    transform: rotate(120deg);
+}
+#hour:after{
+    content: "";
+    width:12px;
+    height:65px;
+    border-radius:6px 6px 3px 3px;
+    background: #C150FF;
+    position:absolute;
+    left: calc(50% - 4px);
+    top:50%;
+    box-shadow: -1px 0 50px black;
+}
  
 .logo{
     width: 50px;
     height: 50px;
-    background-color:##E9DDB3;
+    background-color:#E9DDB3;
 }
 body{
     background-color:#E9DDB3;
 }
 header{
-    background-color:##E9DDB3;
+    background-color:#E9DDB3;
+}
+@keyframes sec{
+    to{
+        transform: rotate(360deg);
+    }
 }
